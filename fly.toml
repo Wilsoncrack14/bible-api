@@ -1,4 +1,4 @@
-app = "bible-api-python" # ⚠️ CAMBIA ESTO por un nombre único (ej: bible-api-tu-nombre)
+app = "bible-api-willo-2026" # ⚠️ CAMBIA ESTO por un nombre único (ej: bible-api-tu-nombre)
 primary_region = "mia" # Miami (bueno para Latam/US). Cambia a "mad" (Madrid) o "scl" (Santiago) si prefieres.
 
 [build]
