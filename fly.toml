@@ -1,0 +1,17 @@
+app = "bible-api-python" # ⚠️ CAMBIA ESTO por un nombre único (ej: bible-api-tu-nombre)
+primary_region = "mia" # Miami (bueno para Latam/US). Cambia a "mad" (Madrid) o "scl" (Santiago) si prefieres.
+
+[build]
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
