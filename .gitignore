@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Pytest
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database (optional if you want to commit the DB or not, but normally binaries are large)
+# Since the DB is static and baked into the image, we DO want to commit it for this specific project structure.
+# bible_api/bible.db
