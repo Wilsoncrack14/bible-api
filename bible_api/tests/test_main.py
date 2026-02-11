@@ -19,14 +19,14 @@ def test_read_chapter():
     assert response.status_code == 200
     data = response.json()
     assert len(data) > 0
-    # Match the exact text from the JSON source
-    assert data[0]["text"].startswith("EN el principio")
+    # Text should now have normalized capitalization (only first letter uppercase)
+    assert data[0]["text"].startswith("En el principio")
 
 def test_read_chapter_cached():
     # Request again to hit cache
     response = client.get("/books/1/chapters/1")
     assert response.status_code == 200
-    assert response.json()[0]["text"].startswith("EN el principio")
+    assert response.json()[0]["text"].startswith("En el principio")
 
 def test_search():
     response = client.get("/search?q=principio&limit=5")
